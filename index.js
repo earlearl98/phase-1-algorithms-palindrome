@@ -1,9 +1,37 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+const normalWord = word.toLowerCase().replace(/\s/g, ' ');
+const reversedWord = normalWord.split('').reverse().join('');
+
+// compare original word with new word 
+
+return normalWord === reversedWord
+
 }
 
+const word1 = "mom"
+const word2 = "racecar"
+console.log(isPalindrome(word1))
+console.log(isPalindrome(word2))
+
 /* 
-  Add your pseudocode here
+  the function is palindrome and 
+  it checks if the word input is the same 
+  when read both from left to right
+  and from right to left i.e "mom"
+
+
+
+
+
+
+
+
+
+  solution; reverse the input word and 
+  compare it with the original word.If the same
+  then the word is a palidrome hence `true` if not 
+  then it is not a palindrome hence `false`
+
 */
 
 /*
